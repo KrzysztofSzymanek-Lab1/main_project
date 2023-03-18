@@ -12,7 +12,7 @@ Modules:
 - The request object used by default in Flask a module in Flask used for handling HTTP requests.
 
 Endpoints:
-- "/" information to to suer, displays a form where users can input their name.
+- "/" information to to user, displays a form where users can input their name.
 - "/hello"...greets the user with their name.
 """
 from flask import Flask, render_template, request
@@ -39,12 +39,12 @@ def greet():
     """
     Module : greet
 
-    If the request method is POST, this function retrieves the value of the "name"
-    input field from the submitted form data, and returns a greeting message with the
-    provided name. Otherwise, it renders the "hello.html" template with an empty form.
+    If the request POST, this retrieves the value of the "name"
+    input field from the submitted form data, and returns message with the provided name. Otherwise, it renders the "hello.html"
+    template with an empty form.
 
     Returns:
-        str or Flask response: If the request method is POST, returns a str with the
+        str or Flask response: If the request is POST, returns a str with the
             greeting message. Differently, returns a Flask response object that renders
             the "hello.html" template with an empty form.
 
