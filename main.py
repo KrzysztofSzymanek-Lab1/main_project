@@ -1,8 +1,10 @@
 """
 Flask Application for greeting users with their name.
 
+
 Author: Krzysztof Szymanek
 Date: 2023-03-18
+
 
 Modules:
 - Flask is a micro web framework written in Python.
